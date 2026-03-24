@@ -1,6 +1,4 @@
-Here you go — clean, final version ready to copy directly 👇
 
-````md
 # Restaurant Management System
 
 A backend API built using Node.js, Express, and MongoDB to manage restaurant operations including menu, tables, and orders.
