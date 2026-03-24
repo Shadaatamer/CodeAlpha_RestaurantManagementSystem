@@ -37,7 +37,7 @@ PORT=3000
 Run the server:
 npm start
 📌 API Endpoints
-🍔 Menu
+## 🍔 Menu
 
 Create Menu Item
 POST /menu
@@ -54,7 +54,7 @@ GET /menu
 Get Single Menu Item
 GET /menu/:id
 
-🪑 Tables
+## 🪑 Tables
 
 Create Table
 POST /table
@@ -69,7 +69,7 @@ GET /table
 Update Table Availability
 PATCH /table/:id
 
-🧾 Orders
+## 🧾 Orders
 
 Place Order
 POST /order
