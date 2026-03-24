@@ -1,8 +1,9 @@
+Here you go — clean, final version ready to copy directly 👇
+
+````md
 # Restaurant Management System
 
 A backend API built using Node.js, Express, and MongoDB to manage restaurant operations including menu, tables, and orders.
-
----
 
 ## 🚀 Features
 
@@ -14,66 +15,79 @@ A backend API built using Node.js, Express, and MongoDB to manage restaurant ope
 - Complete orders and free tables again  
 - View all orders with menu and table details  
 
----
-
 ## 🛠️ Tech Stack
 
 - Node.js  
 - Express.js  
 - MongoDB (Mongoose)  
 
----
-
 ## 📦 Installation
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/Shadaatamer/CodeAlpha_RestaurantManagementSystem.git
-Install dependencies:
+````
+
+2. Install dependencies:
+
+```bash
 npm install
-Create a config.env file in the root folder:
+```
+
+3. Create a `config.env` file:
+
+```env
 DATABASE=your_mongodb_connection_string
 PORT=3000
-Run the server:
+```
+
+4. Run the server:
+
+```bash
 npm start
-📌 API Endpoints
-## 🍔 Menu
+```
 
-Create Menu Item
-POST /menu
+## 📌 API Endpoints
 
+### Menu
+
+**POST /menu**
+
+```json
 {
   "name": "Burger",
   "description": "Beef burger",
   "price": 120
 }
+```
 
-Get All Menu Items
-GET /menu
+**GET /menu**
 
-Get Single Menu Item
-GET /menu/:id
+**GET /menu/:id**
 
-## 🪑 Tables
+---
 
-Create Table
-POST /table
+### Tables
 
+**POST /table**
+
+```json
 {
   "tableNumber": 1
 }
+```
 
-Get All Tables
-GET /table
+**GET /table**
 
-Update Table Availability
-PATCH /table/:id
+**PATCH /table/:id**
 
-## 🧾 Orders
+---
 
-Place Order
-POST /order
+### Orders
 
+**POST /order**
+
+```json
 {
   "table": "table_id_here",
   "items": [
@@ -83,9 +97,10 @@ POST /order
     }
   ]
 }
+```
 
-Get All Orders
-GET /order
+**GET /order**
 
-Complete Order
-PATCH /order/:id/complete
+**PATCH /order/:id/complete**
+
+
